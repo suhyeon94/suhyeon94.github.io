@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+body,html{font-size: 16px;	
+font-family: 'Noto Sans KR',sans-serif,'맑은 고딕','Malgun Gothic','돋움','Dotum','Apple SD Gothic Neo','AppeGothic','Arial','Helvetica'; color:#454545;}
+li{list-style: none;}
+img{border: none;}
+a{color:#555;text-decoration: none;}
+input,button,select{outline: 0;border: 0;}
+
+
+
