@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/favi_144x144.ico">
+    <!-- 모바일 웹앱 문서정보에 대한 설정 -->
+    <meta name="title" content="대전을지대학교병원">
+    <meta name="auther" content="정수현">
+    <meta name="url" content="https://suhyeon94.github.io/r1">
+    <meta name="description" content="대전광역시 서구 둔산동에 위치한 대전을지대학교병원 반응형 웹 사이트">
+    <meta name="keywords" content="DAEJEON EULJI MEDICAL CENTER,대전,대전병원,대학병원,병원, 종합병원">
+    <!-- 애플 어플 문서 정보 설정 -->
+    <meta name="apple-mobile-web-app-title" content="DAEJEON EULJI MEDICAL CENTER
+">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 페이스북에 노출 설정 -->
+    <meta property="fb:app_id" content="APP_ID">
+    <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="대전을지대학교병원">
+    <meta property="og:url" content="https://suhyeon94.github.io/r1/index.html">
+    <meta property="og:description" content="대전광역시 서구 둔산동에 위치한 대전을지대학교병원 반응형 웹 사이트">
+    <meta property="og:img" content="https://suhyeon94.github.io/r1/img/thumb.jpg"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+    <title>대전을지대학교병원</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <!-- XE-icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 일반 앱형태의 아이콘 설정 -->
+    <link rel="icon" href="./ico/favi_16x16.ico" sizes="16x16">
+    <link rel="icon" href="./ico/favi_32x32.ico" sizes="32x32">
+    <link rel="icon" href="./ico/favi_48x48.ico" sizes="48x48">
+    <link rel="icon" href="./ico/favi_64x64.ico" sizes="64x64">
+    <link rel="icon" href="./ico/favi_128x128.ico" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="icon" href="./ico/favi_152x152.ico" sizes="152x152">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <input type="checkbox" id="ck11" class="ck11">
+        <div class="t_pop">
+            <label for="ck11">
+                <i class="xi-close-square"></i>&nbsp;오늘 하루 열지 않음
+            </label>
+            <p>진료비 수납 더 이상 기다리지 마세요!</p>
+        </div>
+        <header class="header">
+            <div class="hd_mw">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="로고">
+                </a>
+                <ul class="loglan_list">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li>
+                        <select name="language" id="lan">
+                            <option value="LANGUAGE">LANGUAGE</option>
+                            <option value="한국어">한국어</option>
+                            <option value="ENGLISH">ENGLISH</option>
+                        </select>
+                    </li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </div>
+
+            <input type="checkbox" id="xi_sch">
+            <button class="bars_btn bars_btn_01">
+                <i class="xi-bars bars_01"></i>
+            </button>
+            <label for="xi_sch">
+                <i class="xi-search search_01"></i>
+            </label>
+            <form action="#" id="form">
+                <input type="text" name="검색창" id="srh" placeholder="검색어를 입력하세요.">
+            </form>
+        </header>
+        <nav class="pnav">
+            <div class="pnav_wrap">
+                <button class="bars_btn bars_btn_02">
+                    <i class="xi-bars bars_02"></i>
+                </button>
+              
+                <ul class="p_menu">
+                    <li>
+                        <a href="#" class="dep1">처음이신가요?</a>
+                      
+                    </li>
+                    <li>
+                        <a href="./sub.html" class="dep1">예약안내</a>
+                      
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">진료안내</a>
+                      
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">전문진료센터</a>
+                       
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">병원소개</a>
+                      
+                    </li>
+                </ul>
+               <button class="xi_sch_02">
+                 <i class="xi-search search_02"></i>
+               </button><!--PC용 검색창 라벨-->
+            </div>
+            <div class="p_sub_wrap">
+                    <div class="sub_box">
+                      <ul class="p_sub first_sub">
+                            <li>
+                                <a href="#" class="sub_tit">처음이신가요?</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sub_txt">자주 묻는 질문</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sub_txt">증명서발급서비스</a>
+                            </li>
+                            <li class="sub_img"><img src="./img/menu_01.png" alt="처음이신가요?"></li>
+                      </ul>
+                      <ul class="p_sub">
+                           <li>
+                                <a href="#" class="sub_tit">예약안내</a>
+                            </li>
+                            <li>
+                                <a href="./sub.html" class="sub_txt">진료예약안내</a>
+                            </li>
+                            <li><a href="#" class="sub_txt">첫 방문고객 진료예약</a></li>
+                             <li class="sub_img"><img src="./img/menu_02.png" alt="예약안내"></li>
+                      </ul>
+                      <ul class="p_sub">
+                        <li>
+                            <a href="#" class="sub_tit">진료안내</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">진료과 소개</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">절차안내</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">입원안내</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">진료지원부서</a>
+                        </li>
+                         <li class="sub_img"><img src="./img/menu_03.png" alt="진료안내"></li>
+                     </ul>
+                     <ul class="p_sub">
+                        <li>
+                            <a href="#" class="sub_tit">전문진료센터</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">건강증진센터</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">암센터</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">로봇수술센터</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">을지검사센터</a>
+                        </li>
+                        <li class="sub_img"><img src="./img/menu_04.png" alt="전문진료센터"></li>
+                    </ul>
+                      <ul class="p_sub">
+                        <li>
+                            <a href="#" class="sub_tit">병원소개</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">을지병원소개</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">시설안내</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub_txt">고객의 소리</a>
+                        </li>
+                        <li class="sub_img"><img src="./img/menu_05.png" alt="병원소개"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <input type="checkbox" id="srh_02">
+        
+        <!--PC버전 nav-->
+        <nav class="mnav">
+            <div class="x_button">
+                <ul class="x_but_list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>
+                        <select name="language" id="mlan">
+                            <option value="LANGUAGE">LANGUAGE</option>
+                            <option value="한국어">한국어</option>
+                            <option value="ENGLISH">ENGLISH</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <button><i class="xi-close"></i></button>
+            </div>
+            <ul class="mgnb">
+                <li class="dep1">
+                    <input type="radio" name="radio" id="ck1" class="radi_button">
+                    <label for="ck1" class="label a">
+                        <span class="mMenu">처음이신가요?</span><span class="pl_icon"></span>
+                    </label>
+                    <ul class="msub">
+                        <li>
+                            <a href="#">처음이신가요?</a>
+                        </li>
+                        <li>
+                            <a href="#">자주 묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">증명서발급서비스</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dep1">
+                    <input type="radio" name="radio" id="ck2" class="radi_button">
+                    <label for="ck2" class="label b">
+                        <span class="mMenu">예약안내</span><span class="pl_icon"></span>
+                    </label>
+                    <ul class="msub">
+                        <li><a href="./sub.html">진료예약안내</a></li>
+                        <li><a href="#">첫 방문고객 진료예약</a></li>
+                    </ul>
+                </li>
+
+                <li class="dep1">
+                    <input type="radio" name="radio" id="ck3" class="radi_button">
+                    <label for="ck3" class="label c">
+                        <span class="mMenu">진료안내</span><span class="pl_icon"></span>
+                    </label>
+                    <ul class="msub">
+                        <li><a href="#">진료과 소개</a></li>
+                        <li><a href="#">절차안내</a></li>
+                        <li><a href="#">입원안내</a></li>
+                        <li><a href="#">진료지원부서</a></li>
+                    </ul>
+                </li>
+
+                <li class="dep1">
+                    <input type="radio" name="radio" id="ck4" class="radi_button">
+                    <label for="ck4" class="label d">
+                        <span class="mMenu">전문진료센터</span><span class="pl_icon"></span>
+                    </label>
+                    <ul class="msub">
+                        <li><a href="#">건강증진센터</a></li>
+                        <li><a href="#">암센터</a></li>
+                        <li><a href="#">로봇수술센터</a></li>
+                        <li><a href="#">을지검사센터</a></li>
+                    </ul>
+                </li>
+
+                <li class="dep1">
+                    <input type="radio" name="radio" id="ck5" class="radi_button">
+                    <label for="ck5" class="label d">
+                        <span class="mMenu">병원소개</span><span class="pl_icon"></span>
+                    </label>
+                    <ul class="msub">
+                        <li><a href="#">을지병원소개</a></li>
+                        <li><a href="#">시설안내</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="m_info">
+               <span class="m_call">통합콜센터</span> 
+               <span class="m_num">1588-0001</span>
+            </div>
+        </nav>
+        <!--모바일 버전 사이드 메뉴-->
+        <div class="main">
+           <div class="slide">
+                <ul class="slider">
+                   <li>
+                      <a href="#">
+                         <img src="./img/slide_01.png" alt="슬라이드01">
+                      </a>
+                   </li>
+                   <li>
+                      <a href="#"><img src="./img/slide_02.png" alt="슬라이드02"></a> 
+                   </li>
+                   <li>
+                       <a href="#"><img src="./img/slide_03.png" alt="슬라이드03"></a> 
+                   </li>
+                </ul>
+                <button class="left_button"></button>
+                <button class="right_button"></button>
+            </div>
+            <!--슬라이드 이미지-->
+            <div class="container">
+                <ul class="contents">
+                    <li id="con_box1">
+                        <a href="sub.html">
+                            <img src="img/w_btn_01.png" alt="진료예약" class="w_btn_i">
+                            <span>진료 예약</span>
+                            <i class="xi-plus"></i>
+                            <p>원하시는 날짜, 진료 시간을<br>
+                                선택해 편안하게 약하세요!</p>
+                        </a>
+                    </li>
+                    <li id="con_box2">
+                        <a href="#">
+                            <img src="img/w_btn_02.png" alt="검진예약" class="w_btn_i">
+                            <span>검진 예약</span>
+                            <i class="xi-plus"></i>
+                            <p>원하시는 날짜, 검진 시간을<br> 선택해 편안하게 예약하세요!</p>
+                        </a>
+                    </li>
+                    <li id="con_box3">
+                        <a href="#">
+                            <img src="img/w_btn_03.png" alt="진료과 찾기" class="w_btn_i">
+                            <span>진료과 찾기</span>
+                             <i class="xi-plus"></i>
+                            <p>진료과 및 의료진 명으로<br> 간단히 검색하세요!</p>
+                        </a>
+                    </li>
+                    <li id="con_box4">
+                        <a href="#">
+                            <img src="img/w_btn_04.png" alt="증명서 발급" class="w_btn_i">
+                            <span>증명서 발급</span>
+                            <i class="xi-plus"></i>
+                            <p>문의) 042-259-1141</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="pop_box">
+                <section class="medical_p">
+                    <div class="medi_tbox">
+                        <h4 class="tb_medi_tit">#2월 이달의 의료진</h4>
+                        <div class="label_wrap">
+                            <label for="md1" class="item11">
+                                <i class="xi-angle-left-min"></i>
+                            </label>
+                            <label for="md2" class="item12">
+                                <i class="xi-angle-right-min"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="rdo1" id="md1" checked>
+                    <input type="radio" name="rdo1" id="md2">
+
+                    <div class="tab_medi_box">
+                        <div class="medi_sl" id="ms1">
+                           <img src="img/doctor_01.png" alt="의사01" class="doctor_01">
+                            <img src="img/medical_02.png" alt="바탕띠" class="square_01">
+                            <h5><span class="wh_txt">이비인후과 / </span><span class="bl_txt">이호윤교수</span></h5>
+                            <p class="fir_txt">환자분들을 가족과 같이 여기며
+                                성심껏 진료하겠습니다.</p>
+                            <p class="sec_txt">환자분들의 말씀을 항상 귀 귀울여 듣고,
+                                진심으로 소통하며 최선의 치료법을 찾아
+                                나갈 수 있도록 노력하고 있습니다.
+                                감사합니다.</p>
+                            
+                        </div>
+                        <div class="medi_sl" id="ms2">
+                           <img src="img/doctor_02.png" alt="의사02" class="doctor_02">
+                            <img src="img/medical_02.png" alt="바탕띠" class="square_02">
+                            <h5><span class="wh_txt">영상의학과 / </span><span class="bl_txt">김희경교수</span></h5>
+                            <p class="fir_txt">항상 노력하는 자세로 최상의 진료를 제공하겠습니다.</p>
+                            <p class="sec_txt">폐질환은 최근 더욱 활발한 진료와 연구가
+                                진행되고 있고 환자의 삶에 큰 영향을 주는
+                                질환입니다. 환자를 먼저 생각하고 가족을
+                                진료하는 마음으로 판독하겠습니다.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="pop_p">
+                   <div class="tb_tit_wrap">
+                    <h4 class="tb_tit">#POPUPZONE</h4>
+                        <input type="radio" name="rdo2" id="ral1" checked>
+                        <input type="radio" name="rdo2" id="ral2">
+                        <input type="radio" name="rdo2" id="ral3">
+                        <div class="tab_num_box">
+                            <label for="ral1" class="item1">1</label>
+                            <label for="ral2" class="item2">2</label>
+                            <label for="ral3" class="item3">3</label>
+                        </div>
+                        <div class="tab_con_box">
+                                <div class="tb_slide" id="sl1">
+                                    <img src="img/popup_01.png" alt="팝업창01">
+                                </div>
+                                <div class="tb_slide" id="sl2">
+                                    <img src="img/popup_02.png" alt="팝업창02">
+                                </div>
+                                <div class="tb_slide" id="sl3">
+                                    <img src="img/popup_03.png" alt="팝업창03">
+                                </div>
+                        </div>
+                        </div>
+                    
+                </section>
+            </div>
+        </div>
+        <div class="thir_con">
+            <div class="news">
+                <div id="news_letter">
+                    <div id="news_letter_box">
+
+                        <h4>#을지소식</h4>
+                        <a href="#"><img src="img/w_plus.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=13211" target="new">간호사회 테나, 예비간호사에 장학금 전달</a>
+                            <span>2020-03-02</span>
+                        </li>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=13210" target="new">교보생명보험과 업무협약 체결</a>
+                            <span>2020-02-25</span>
+                        </li>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=13056" target="new">자원봉사자 사은행사 개최</a>
+                            <span>2020-02-13</span>
+                        </li>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=12877" target="new">낮병동 운영, "하루 만에 입원도 하고 퇴원도 해요"</a>
+                            <span>2020-02-03</span>
+                        </li>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=13057" target="new">신포괄수가제 시범사업 실시</a>
+                            <span>2020-01-28</span>
+                        </li>
+                        <li>
+                            <a href="http://www.emc.ac.kr/info/info_pg06_02.jsp?board_code=BOARD_8&board_sequence=13052" target="new">'췌장암 바로알기 건강강좌' 개최</a>
+                            <span>2020-01-20</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="guide">
+                <div class="health">
+                    <div id="health_tit_box">
+                        <h4>#건강정보</h4>
+                        <a href="#"><img src="img/w_plus.png" alt=""></a>
+                    </div>
+                    <img src="img/health.png" alt="" id="gan_img">
+                    <p>소화기내과 - 도영진교수</p>
+                </div>
+                <section id="map">
+                    <h2>오시는 길</h2>
+                    <p>지도를 통해 교통수단별로<br>
+                        안내해 드립니다.</p>
+                    <div id=btn_box>
+                        <button id="btn_01">위치안내</button>
+                        <button id="btn_02">주차안내</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--content_03-->
+
+        <div class="footer">
+            <div class="f_list">
+                <ul class="f_list_group">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"> 환자의 권리와 의무</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일 무단 수집 거부</a></li>
+                    <li><a href="#">보건복지부인증의료기관</a></li>
+                </ul>
+                <ul class="l_list_group">
+                    <li class="sns_lg">
+                        <a href="https://www.facebook.com/EMCfam/" target="new">
+                            <img src="img/big_blog.png" alt="블로그">
+                        </a>
+                    </li>
+                    <li class="sns_lg">
+                        <a href="https://blog.naver.com/eulji_fam" target="new">
+                            <img src="img/big_face.png" alt="페이스북">
+                        </a>
+                    </li>
+                    <li class="sam_lg">
+                        <img src="img/sam_01.png" alt="삼성1">
+                    </li>
+                    <li class="sam_lg">
+                        <img src="img/sam_02.png" alt="삼성2">
+                    </li>
+                    <li class="sam_lg">
+                        <img src="img/sam_03.png" alt="삼성3">
+                    </li>
+                    <li class="sam_lg">
+                        <img src="img/sam_04.png" alt="삼성4">
+                    </li>
+                </ul>
+            </div>
+            <div class="adress">
+                <div class="ad_wrap">
+                    <div class="p_wrap">
+                        <p>[우 : 35233] 대전광역시 서구 둔산서로 95(둔산동)</p>
+                        <p>COPYRIGHT &copy; 2020 BY DAEJEON EULJIMEDICAL CENTER.EULJI UNIVERSITY.ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="sel_wrap">
+                        <span id="call_name">통합콜센터</span>
+                        <span id="call_num">1588-0001</span>
+                        <select id="fam_site" onchange="if(this.value) window.open(this.value);">
+                            <option value="FAMILY SITE 바로가기">FAMILY SITE 바로가기</option>
+                            <option value="https://www.eulji.net/">을지재단</option>
+                            <option value="http://www.eulji.ac.kr/">을지대학교</option>
+                            <option value="http://www.eulji.or.kr/index.jsp">노원을지대학교병원</option>
+                            <option value="http://gangnam.eulji.or.kr/index.jsp">강남을지대학교병원</option>
+                            <option value="http://admission.eu.ac.kr/?menuno=5974">의정부을지대학교병원</option>
+                            <option value="https://www.euljiedu.net/">을지인력개발원</option>
+                            <option value="https://www.bumsuk.or.kr/">범석학술장학재단</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div><!--footer-->
+        <div class="srh_pop_wrap">
+            <form action="#" class="pop_form">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <div class="submit">검색</div>
+            </form>
+            <button>
+                    <i class="xi-close-square pop_close"></i>
+                </button>
+            
+        </div>
+    </div>
+</body></html>
