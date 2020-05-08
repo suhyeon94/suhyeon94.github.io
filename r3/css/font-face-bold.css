@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "Tmoney_b";
+    src:url("../font/TmoneyRoundWindExtraBold.woff") format("woff");
+    src:url("../font/AnyConv.com__TmoneyRoundWindExtraBold.eot") format("eot");
+    src:url("../font/TmoneyRoundWindExtraBold.otf") format("opentype");
+}

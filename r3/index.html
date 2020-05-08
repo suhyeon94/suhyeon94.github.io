@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/favi_144x144.ico">
+    <!-- 모바일 웹앱 문서정보에 대한 설정 -->
+    <meta name="title" content="티머니카드&페이">
+    <meta name="auther" content="정수현">
+    <meta name="url" content="https://suhyeon94.github.io/r3">
+    <meta name="description" content="티머니카드&페이 반응형 웹 사이트">
+    <meta name="keywords" content=" 티머니카드&페이,티머니카드,티머니페이,스마트페이,T마일리지,모바일결제,어린이/청소년 할인,고속/시외버스 예매">
+    <!-- 애플 어플 문서 정보 설정 -->
+    <meta name="apple-mobile-web-app-title" content="Tmoney card & pay">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 페이스북에 노출 설정 -->
+    <meta property="fb:app_id" content="APP_ID">
+    <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="티머니카드&amp;페이">
+    <meta property="og:url" content="https://suhyeon94.github.io/r3/index.html">
+    <meta property="og:description" content="티머니카드&페이 반응형 웹 사이트">
+    <meta property="og:img" content="https://suhyeon94.github.io/r3/images/thumb.jpg"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+    <title>티머니카드&amp;페이</title>
+    <!-- 일반 앱형태의 아이콘 설정 -->
+    <link rel="icon" href="./ico/favi_16x16.ico" sizes="16x16">
+    <link rel="icon" href="./ico/favi_32x32.ico" sizes="32x32">
+    <link rel="icon" href="./ico/favi_48x48.ico" sizes="48x48">
+    <link rel="icon" href="./ico/favi_64x64.ico" sizes="64x64">
+    <link rel="icon" href="./ico/favi_128x128.ico" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="icon" href="./ico/favi_152x152.ico" sizes="152x152">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"><!--노토산스 폰트-->
+    <link rel="stylesheet" href="./css/font-face-bold.css">
+    <link rel="stylesheet" href="./css/font-face-regular.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"><!--XE 아이콘-->
+    <script src="script/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+
+</head>
+<body>
+     
+    <aside id="left">
+        <a href="#" class="logo"><img src="./images/logo.png" alt="로고"></a>
+        <nav class="gnb">
+            <a href="https://pay.tmoney.co.kr/ncs/pct/ugd/ReadUgdMainGd.dev" class="srh_tit" target="new">이용안내</a>
+            <form action="#" class="srh_box">
+                <input type="text">
+                <div class="square">
+                    <i class="xi-search"></i>
+                </div>
+            </form>
+            <div class="line"></div>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="dep1">카드등록</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadCardNoRgt.dev?set=add">- 일반카드</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadDscdRgtDvs.dev" >- 어린이/청소년 카드</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadFrgnDscdRgt.dev">- Foreigner card</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">나의 티머니</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadTrprInqr.dev">- 사용 내역조회</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadMlgPt.dev">- 마일리지 내역조회</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadRgtCardPrcn.dev">- 등록된 카드현황</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">모바일티머니</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mblTmny/ReadMblTmnyGd.dev">- 이용안내</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/tmnyintd/ReadMblTmnyMissStol.dev">- 분실도난/안심서비스</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">커뮤니티</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadNtcMttrNewsList.dev">- 공지사항</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadEvntList.dev">- 이벤트</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadCusSgsnRgtScrn.dev">- 고객제안</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </aside>
+    <aside class="mleft">
+        <div class="w_wrap">
+        <button class="m_close">
+           <i class="xi-close"></i>
+        </button>
+        <div class="m_icon_box">
+           <a href="#"><img src="./images/login.png" alt="로그인"></a> 
+           <a href="#"><img src="./images/member.png" alt="회원가입"></a> 
+           <a href="#"><img src="./images/lan.png" alt="English"></a>  
+        </div>
+         <ul class="Mmenu">
+                <li>
+                    <a href="#" class="dep1">카드등록</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadCardNoRgt.dev?set=add">- 일반카드</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadDscdRgtDvs.dev" >- 어린이/청소년 카드</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/cardrgt/ReadFrgnDscdRgt.dev">- Foreigner card</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">나의 티머니</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadTrprInqr.dev">- 사용 내역조회</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadMlgPt.dev">- 마일리지 내역조회</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mtmn/ReadRgtCardPrcn.dev">- 등록된 카드현황</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">모바일티머니</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/mblTmny/ReadMblTmnyGd.dev">- 이용안내</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/tmnyintd/ReadMblTmnyMissStol.dev">- 분실도난/안심서비스</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep1">커뮤니티</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadNtcMttrNewsList.dev">- 공지사항</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadEvntList.dev">- 이벤트</a>
+                        </li>
+                        <li>
+                            <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadCusSgsnRgtScrn.dev">- 고객제안</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>  
+        </div>
+    </aside>
+   
+   <div class="mnav">
+        <button class="toggle">
+            <i class="xi-bars"
+            ></i>
+        </button>
+        <label class="m_srh" for="check">
+            <i class="xi-search msrh"></i>
+        </label>
+        <a href="#" class="mlogo">
+            
+        </a>
+    </div>
+      <input type="checkbox" id="check" class="ck">
+    <form action="#" class="txt_form">
+        <input type="text" placeholder="검색어를 입력해주세요" class="txt_box">
+        <!-- <i class="xi-search mini"></i>-->
+    </form>
+   
+    <div class="main" >  
+       <ul class="slide" data-transition="slide">
+            <li class="slide_01">
+           
+              <div class="txt_box">
+              <h2 class="tit1">World Class</h2>
+              <h2 class="tit2">Payment Service</h2>
+              <p class="slide_txt">스마트한 결제서비스로<br> 
+                                    더 편리한 세상을 만들겠습니다.</p>
+
+               </div>
+       
+            </li>
+            <li class="slide_02">
+               
+                <div class="txt_box">
+                  <h2 class="tit1">티머니 페이가 제공하는</h2>
+                  <h2 class="tit2">다양한 부가기능</h2>
+               </div>
+               <ul class="box_group">
+                   <li class="deep">
+                       <a href="#">
+                             <img src="./images/box_icon1.png" alt="은행 서비스">
+                           교통카드
+                       </a>
+                   </li>
+                   <li class="lavender">
+                       <a href="#">
+                           <img src="./images/box_icon2.png" alt="교통카드">
+                           교통카드
+                       </a>
+                   </li>
+                   <li class="deep">
+                      <a href="#">
+                           <img src="./images/box_icon3.png" alt="멤버십">
+                           멤버십
+                      </a>
+                   </li>
+                   <li class="empty_box">
+                       <img src="./images/hand_03.png" alt="손3" class="hand_03">
+                   </li>
+                   <li class="lavender">
+                       <a href="#">
+                           <img src="./images/box_icon4.png" alt="쇼핑">
+                           쇼핑
+                       </a>
+                   </li>
+                   <li class="deep">
+                        <a href="#">
+                           <img src="./images/box_icon5.png" alt="쿠폰 서비스">
+                           쿠폰 서비스
+                       </a>
+                   </li>
+                   <li class="lavender">
+                       <a href="#">
+                           <img src="./images/box_icon6.png" alt="금융 서비스">
+                           금융 서비스
+                       </a>
+                   </li>
+                   <li class="deep">
+                        <a href="#">
+                           <img src="./images/box_icon7.png" alt="FAQ">
+                           FAQ
+                       </a>
+                   </li>
+               </ul>
+         
+           
+            </li>
+            <li class="slide_03">
+               <ul class="nine">
+                   <li class="wh">
+                       <a href="#">
+                         <img src="./images/card01.png" alt="카드01" class="card">
+                          <div class="txt_box">
+                              <h3>카카오프렌즈  LAZY-어피치</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 4,000원<br>   
+                                판매처 : 세븐일레븐<br>  
+                               </p>
+                          </div>
+
+                       </a>
+                   </li>
+                   <li class="gr">
+                       <a href="#">
+                          <img src="./images/card02.png" alt="카드02" class="card">
+                           <div class="txt_box">
+                              <h3>카카오프렌즈  LAZY-라이언</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 4,000원<br>   
+                                판매처 : 세븐일레븐<br>  
+                               </p>
+                          </div>
+                       </a>
+                   </li>
+                   <li class="pur">
+                       <a href="#">
+                          <img src="./images/line.png" alt="대각선" class="diagonal">
+                           <div class="txt_box">
+                             <h1>티머니<br>카드소개
+                             </h1>
+                          </div>
+                       </a>
+                   </li>
+                   <li class="dark">
+                       <a href="#">
+                          <img src="./images/dote.png" alt="도트" class="dote">
+                          <img src="./images/money.png" alt="돈" class="money">
+                           <div class="txt_box">
+                              <h2>마일리지 적립은<br>
+                                  물론 다양한 혜택까지<br>
+                                  빠짐없이 챙기세요!
+                                </h2>
+
+                          </div>
+                       </a>
+                   </li>
+                   <li class="wh">
+                       <a href="#">
+                          <img src="./images/card03.png" alt="카드03" class="card">
+                           <div class="txt_box">
+                              <h3>포켓몬 티머니 파이리</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 4,000원<br>   
+                                판매처 : 세븐일레븐<br>  
+                               </p>
+                          </div>
+                       </a>
+                   </li>
+                   <li class="gr">
+                       <a href="#">
+                          <img src="./images/card04.png" alt="카드04" class="card">
+                           <div class="txt_box">
+                              <h3>포켓몬 티머니 꼬부기</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 4,000원<br>   
+                                판매처 : 세븐일레븐<br>  
+                               </p>
+                          </div>
+                       </a>
+                   </li>
+                   <li class="wh basic">
+                       <a href="#">
+                          <img src="./images/card05.png" alt="카드05" class="card">
+                           <div class="txt_box">
+                              <h3>베이직 블랙</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 3,000원<br>   
+                                판매처 : 365플러스, 씨스페이스,<br>가두 판매점  
+                               </p>
+                          </div>
+                       </a>
+                   </li>
+                   <li class="gr city">
+                      <a href="#">
+                          <img src="./images/card06.png" alt="카드06" class="card">
+                           <div class="txt_box">
+                              <h3>씨티패스 플러스</h3>
+                               <p>
+                                권    종 : 통합권종<br>
+                                가    격 : 4,000원<br>   
+                                판매처 : GS25, 가두판매점,<br>지하철역사 내(수도권1~8호선)  
+                               </p>
+                          </div>
+                       </a> 
+                   </li>
+                   <li class="or">
+                     <a href="https://pay.tmoney.co.kr/ncs/pct/tmnyintd/ReadTmnyIntd.dev" target="new">
+                           <div class="txt_box">
+                              <h2>온라인 샵에서<br> 다양한 카드 구경하기</h2>
+                              <img src="./images/next_btn.png" alt="다음 버튼" class="next_btn">
+                             </div>
+                     </a>  
+
+
+                   </li>
+               </ul>
+            </li>
+            <li class="slide_04">
+             <div class="double">
+             <img src="./images/double.png" alt="묻고더블" class="double_img">
+              <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadEvnt.dev?evntDvs=1&evntSno=904&admin=N" target="new">
+                  <img src="./images/learn_more.png" alt="자세히 알아보기" class="learn_more">
+              </a>
+              </div>
+
+            </li>
+            <li class="slide_05">
+                <img src="./images/sl_05_tit.png" alt="슬라이드05 제목" class="img_tit">
+
+                <div class="notice_box">
+                  <img src="./images/event_notice.png" alt="공지사항" class="notice">
+                  <a href="https://pay.tmoney.co.kr/ncs/pct/comm/ReadEvnt.dev?evntDvs=1&evntSno=908&admin=N" class="next_btn_gr" target="new">
+                      <img src="./images/next_btn_green.png" alt="이벤트 바로가기">
+                  </a>
+                </div>
+            </li>
+        </ul>
+        <ul class="num_btn">
+            <li class="item1"><button class="btn on"  data-value="0"></button></li>
+            <li class="item2"><button class="btn"  data-value="1"></button></li>
+            <li class="item3"><button class="btn"  data-value="2"></button></li>
+            <li class="item4"><button class="btn"  data-value="3"></button></li>
+            <li class="item5"><button class="btn"  data-value="4"></button></li>
+        </ul>
+    
+    </div>
+   
+  
+   <div class="short">
+       <a href="https://pay.tmoney.co.kr/MbrsLgn.dev" class="short_icon" target="new">
+           <img src="./images/login.png" alt="로그인">
+       </a>
+       <a href="https://pay.tmoney.co.kr/ncs/pct/mbrsintg/ReadIntgMbrsJoinGd.dev" class="short_icon" target="new">
+           <img src="./images/member.png" alt="회원가입">
+       </a>
+       <a href="https://pay.tmoney.co.kr/ncs/pct/tmnyintd/ReadFrgnKoreaTourCardEngIntd.dev" class="short_icon" target="new">
+           <img src="./images/lan.png" alt="English">
+       </a>
+       <div class="customers">
+           <a href="#">고객센터</a>
+       </div>
+   </div>
+     
+    <footer id="ft">
+        <a href="#" class="ft_logo">
+        <img src="./images/ft_logo.png" alt="하단로고">
+        </a>
+        <ul class="copy">
+            <li>
+            <a href="https://pay.tmoney.co.kr/jsp/ncs/pct/cmn/IndlInfTrt.jsp" target="new">개인정보처리방침</a>
+            </li>
+            <li>
+                <a href="https://pay.tmoney.co.kr/jsp/ncs/pct/cmn/TmnySvcStpl.jsp" target="new">이용약관</a>
+            </li>
+            <li>Copyright &copy; 2020 Tmoney Co., Ltd.</li>
+            <li>
+                <span>운영시간 평일&nbsp;&nbsp;</span>
+                <span class="time">09:00~18:00</span>
+            </li>
+            <li>
+                <span>고객센터 대표전화&nbsp;</span>
+                <span class="num">1644-0088</span>
+            </li>
+        </ul>
+        <div class="sns_box">
+            <a href="#"><img src="./images/blog.png" alt="블로그" ></a>
+            <a href="https://www.instagram.com/tmoney_insta/" target="new"><img src="./images/insta.png" alt="인스타그램" ></a>
+            <a href="https://www.facebook.com/play.tmoney" target="new"><img src="./images/face.png" alt="페이스북"></a>
+        </div>
+        <div class="sel_box">
+            <select name="핫링크" id="hot_link" onchange="if(this.value)window.open(this.value)">
+                <option value="HOT LINK">HOT LINK</option>
+                <option value="http://topis.seoul.go.kr/map/openBusMap.do">버스노선(Topis)</option>
+                <option value="http://bus.go.kr/subWayMain2.jsp?mnuNm=3">지하철 노선</option>
+                <option value="https://pay.tmoney.co.kr/ncs/pct/cmn/ReadBusCmpyGd.dev">버스운수사 연락처</option>
+            </select>
+            <select name="패밀리사이트" id="family" onchange="if(this.value)window.open(this.value)">
+                <option value="FAMILY SITE">FAMILY SITE</option>
+                <option value="https://www.hankkumicard.co.kr/">한꿈이카드</option>
+                <option value="http://membership.bgfretail.com/pc/index">티머니온라인샵</option>
+                <option value="http://membership.bgfretail.com/pc/index">CU플러스티머니</option>
+                <option value="http://www.popcard.co.kr/popcard/ko/main">POP티머니</option>
+                <option value="http://www.biztmoney.co.kr/">법인교통카드</option>
+            </select>
+        </div>
+    </footer>
+     
+</body>
+</html>
