@@ -33,7 +33,7 @@ body{width: 100%;font-family: 'Noto Sans KR','나눔 스퀘어','맑은 고딕',
 
 .sl_01{background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;background-image: url(../image/main_sl_01.png);}
 .sl_01 .v_wrap{width: 1200px;height: 650px;position: relative;margin: 0 auto;z-index: 50;}
-.txtBox{position: absolute;top: 214px;left: 0;width: 490px;height: 295px;}
+.txtBox{position: absolute;top: 214px;left: 0;width: 560px;height: 295px;}
 .p_tit{margin-left: 60px;font-size: 31px;font-weight: 900;color: #3e3a39; line-height: 44px;}
 .r_span{color: #009ab0;}
 .p_txt{margin-left: 60px;margin-top: 24px;color: #3e3a39;font-size: 17px;font-weight: 400;line-height: 24px;}
@@ -329,22 +329,29 @@ background-size:17px;background-position:95%;padding-left: 20px;outline: none;}
 .share_wrap a{width: 20px;height: 20px;}
 /*icon_btn */
 .icon_btn{width: 100%;height: 240px;}
-.icon_btn ul li a img{width: 50px;}  
+.icon_btn ul li a{font-size: 12px;}
+.icon_btn ul li a:hover,.icon_btn ul li a:active{font-size: 13px;color: #ff6f52;}
+.icon_btn ul li a img{width: 50px;} 
+.icon_btn ul li a:hover img,.icon_btn ul li a:active img{transform: scale(1.12);}
 .center{width: 50%;height: 250px;}
 .center a p{display: none;} 
 .bl_btn{width: 20px;height: 20px;transition: all 0.5s;transform: scale(1);}
+.center_wrap .h3_wrap h3{font-size: 15px;}
 .span_wrap{position: absolute;bottom: 0; right: 0;background-color: rgba(0,0,0,0.7);width: 100%;height: 70px;box-sizing: border-box;overflow: hidden;line-height:20px;padding: 10px 0;}
 .span_wrap span{display: block; color: #fff;font-size: 12px;background-image: url(../image/circle_02.png);background-position: 15px center;background-size: 5px 5px;background-repeat: no-repeat;text-align: left;text-indent: 20px;}
 .span_wrap span:first-child{padding-right:0;}    
 .network{width: 50%;height: 250px;}   
 .nw_wrap{display: block;width: 100%;height: 100%;border:1px solid #9e9e9f;background-color: #fff;padding-top: 30px;text-align: center;box-sizing: border-box;overflow:hidden;}
-.nw_wrap h3{color: #3e3a39;font-size: 18px;font-weight: 900;}
+.nw_wrap h3{color: #3e3a39;font-size: 15px;font-weight: 900;}
 .network .search{padding: 30px 0px 0px;box-sizing: border-box;}
 .network .search input{width: 80%;height: 25px;}
+.nw_list li a{font-size: 11px;}
+.nw_list li a:hover,.nw_list li a:active{font-size: 12px;color: #ff6f52;}
 .nw_list li a img{width: 50px;transform: scale(1);transition: all 0.5s;}
+.nw_list li a:hover img{transform: scale(1.12);}
 /*banner*/
 .banner{display: none;}
-/*content1과 content2의 여백을 줌  */
+/*content1과 content2의 여백을 줌*/
 #content1:after{content: "";clear: both;display: block;height: 20px;}
 /*content2*/
 #content2{height: auto;}
