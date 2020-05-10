@@ -132,7 +132,7 @@
 .m_close i{color: #fff;font-weight: bold;font-size: 20px;}  
 .m_icon_box{width: 100%;height: 15%;background-color: #eee;}   
 .m_icon_box a{float: left;display: block;width: 33.3333%;height: 100%;}
-.m_icon_box a img{display: block;width:50%;height: 50%;margin: 0 auto;padding-top: 25%;}
+.m_icon_box a img{display: block;width:80px;height: 80px;margin: 0 auto;padding-top: 25%;}
 .Mmenu{padding: 30px 60px;box-sizing: border-box;overflow: hidden;}
 .Mmenu > li{padding-bottom: 20px;}
 .Mmenu > li > a.dep1{display: block; font-size: 28px;font-family:'Tmoney_b';line-height: 46px;color: #653B93;;}
@@ -256,7 +256,7 @@
 .m_close i{color: #fff;font-weight: bold;font-size: 18px;}  
 .m_icon_box{width: 100%;height: 12%;background-color: #eee;}   
 .m_icon_box a{float: left;display: block;width: 33.3333%;height: 100%;}
-.m_icon_box a img{display: block;width:50%;height: 50%;margin: 0 auto;padding-top: 25%;}
+.m_icon_box a img{display: block;width:50px;height: 50px;margin: 0 auto;padding-top: 25%;}
 .Mmenu{padding: 20px 30px;box-sizing: border-box;overflow: hidden;}
 .Mmenu > li{padding-bottom: 13px;}
 .Mmenu > li > a.dep1{display: block; font-size: 18px;font-family:'Tmoney_b';line-height: 32px;color: #653B93;;}
@@ -327,8 +327,8 @@
 .nine .dark .txt_box{width: 220px;top: calc(50% - 67.5px);left: calc(50% - 80px); }
 .nine .dark img.dote{display: block; position: absolute;bottom: 0;left: 0;width: 180px;}
 .nine .dark img.money{display: block;position: absolute;top:30px;right: 30px;width: 55px;}
-.nine .or .txt_box{width: 170px;position: absolute;top: calc(50% - 24px);left: calc(50% - 85px);overflow: hidden;}
-.nine .or h2{font-family: 'Tmoney_b';color: #fff;line-height: 23px;font-size: 15px;}
+.nine .or .txt_box{width: 152px;position: absolute;top: calc(50% - 23px);left: calc(50% - 76px);overflow: hidden;}
+.nine .or h2{font-family: 'Tmoney_b';color: #fff;line-height: 23px;font-size: 13px;}
 .nine .or .next_btn{display: block;width: 18px;height: 18px;position: absolute;right: 0;bottom: 3%;}
 /*슬라이드4*/
 .slide_04{background-size: cover;}
@@ -349,18 +349,19 @@
 .short{display: none;}       
 /*푸터*/ 
 #ft{position:relative;bottom: 0;width: 100%;height:88px;background-color: #d4fff4;z-index: 550;overflow: hidden;box-sizing: border-box;}
-#ft .ft_logo{display: inline-block;width: 80px;height:29.08px;position: absolute;left:20px;top: 15px;}
-#ft .ft_logo img{display: block;width: 80px;height:29.08px;}
-#ft .copy{position: absolute;left: 32%;height: 67px;line-height: 20px;top:15px;font-size: 10px;width: 40%;}
+#ft .ft_logo{display: inline-block;width: 80px;height:29.08px;position: absolute;left:15px;top: 15px;}
+#ft .ft_logo img{display: block;width: 70px;height:29.08px;}
+#ft .copy{position: absolute;left: 29%;height: 67px;line-height: 20px;top:15px;font-size: 10px;width: 43%;}
 #ft .copy li{padding-right: 0;float:left;color: #7d7c7d;font-family: 'Tmoney_r';}
+#ft .copy li:first-child{margin-right: 10px;}
 #ft .copy li a{color: #7d7c7d;font-family: 'Tmoney_b';}
 #ft .copy li:nth-child(2) a{color: #ef8200;}
 #ft .copy li:nth-child(3){padding-right: 0;width: 100%;}
 #ft .copy li:nth-child(4){display:none;}
 #ft .copy li:last-child{display: none;}
 .copy li span.time,.copy li span.num{font-weight: bold;}
-#ft .sns_box{position: absolute;top: 20px; right: 20px;overflow: hidden;}
-#ft .sns_box a{display: block;width: 20px;height: 20px;float: left;margin-left: 10px;}
+#ft .sns_box{position: absolute;top: 20px; right: 15px;overflow: hidden;}
+#ft .sns_box a{display: block;width: 20px;height: 20px;float: left;margin-left: 7px;}
 #ft .sns_box img{display: block;width: 20px;height: 20px;}
 #ft .sel_box{clear: both; position: absolute;right: 138px;top:calc(50% - 13.5px);}
 #ft .sel_box {display: none;}
