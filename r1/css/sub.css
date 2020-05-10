@@ -93,10 +93,12 @@
     .text_ip{width: 76%;height: 40px;float:left;display: block;background-color: #fff;text-indent: 14px;border-bottom: 1px solid #607e91;box-sizing: border-box;}
     .ip_last{border-bottom: none;}
     .p_txt{clear: both;width: 76%;float: right;color: #4d4d4f;margin-top: 20px;font-size: 12px;font-size: 11px;}
-    #agree{clear: both;display: block;width: 12px;height: 12px;position: absolute;bottom: 31.8%;left: 24%;}
-    .agree_label{display: block; width:76%;float: right; text-indent: 7%;color: #4d4d4f;margin-top: 8px;font-size: 11px;}
+    .agree_wrap{overflow: hidden;float: right; width: 76%;margin-top: 4px;}
+    #agree{clear: both;display: inline-block;width: 12px;height: 12px;float: left;margin-top: 4px;}
+    .agree_label{display: inline-block;float: left; text-indent: 7%;color: #4d4d4f;font-size: 11px;margin-top: -15px;}
+
     .but_wrap{position: absolute;bottom:10%;right:0;}
-    .but_wrap button{width: 70px;height: 25px;display: block;float: left;font-size: 12px;cursor: pointer;}
+    .but_wrap button{width: 70px;height: 25px;line-height: 25px;display: block;float: left;font-size: 12px;cursor: pointer;}
     .fir_btn{border: 1px solid #314d5d;box-sizing: border-box;}
     .sec_btn{background-color: #314d5d; color: #fff;}
     /*콘텐츠_03*/
@@ -236,10 +238,11 @@
     .text_ip{width: 80%;height: 48px;float:left;display: block;background-color: #fff;text-indent: 16px;border-bottom: 1px solid #607e91;box-sizing: border-box;}
     .ip_last{border-bottom: none;}
     .p_txt{clear: both;width: 70%;float: right;color: #4d4d4f;margin-top: 20px;font-size: 12px;margin-right: 5%;}
-    #agree{clear: both;display: block;width: 15px;height: 15px;position: absolute;bottom: 30.5%;left: 24.7%;}
-    .agree_label{display: block; width:70%;float: right; text-indent: 20px;color: #4d4d4f;margin-top: 8px;font-size: 12px;margin-right: 5%;}
-    .but_wrap{position: absolute;bottom:96px;right:45px;}
-    .but_wrap button{width: 80px;height: 31px;display: block;float: left;font-size: 13px;cursor: pointer;}
+    .agree_wrap{overflow: hidden;float: right; width: 70%;margin-top: 4px;margin-right: 5%;}
+    #agree{clear: both;display: inline-block;width: 13px;height: 13px;float: left;margin-top: 4px;}
+    .agree_label{display: block;float: left; text-indent: 7px;color: #4d4d4f;font-size: 12px;}
+    .but_wrap{position: absolute;bottom:86px;right:45px;}
+    .but_wrap button{width: 80px;height: 31px;line-height: 31px;display: block;float: left;font-size: 13px;cursor: pointer;}
     .fir_btn{border: 1px solid #314d5d;box-sizing: border-box;}
     .sec_btn{background-color: #314d5d; color: #fff;}
     /*콘텐츠_03*/
@@ -303,7 +306,6 @@
     #form{display: none; width: auto;padding: 13px;background-color: #2c3648;transition: 0.5s}
     #form input{display: none;}
     
-    
     /*모바일 오른쪽 메뉴*/
     .x_button{width: 100%;height: 60px;background: #222c3d;position: relative;border: 0;overflow: hidden;box-sizing: border-box;padding: 10px;}
     .mnav{display: none;}
@@ -338,7 +340,6 @@
     .pnav_wrap{width: 1200px;margin: 0 auto;position: relative;/*background-color: #ff0;*/height: 56px;}
     .bars_btn_02{position: absolute; display:block;position: absolute;top: 0;right: 50px;font-size: 28px;line-height: 56px;color:#7d7d7d;cursor: pointer;}/*pc용 토글버튼*/
     .xi_sch_02{display: block;line-height: 56px;position: absolute;right: 0;top: 0;font-size: 28px;color:#7d7d7d;cursor: pointer;}
-    
     .p_menu>li{float: left;padding:0 20px;text-align: center;box-sizing: border-box;border-right: 1px solid #c9caca;margin-top: 17.5px;}
     .p_menu>li:last-child{border-right: none;}
     .p_menu>li:nth-child(2) a.dep1{color: #3087cb;}
@@ -358,9 +359,6 @@
     /*PC용 검색창*/
     #form2{display:none;width: 100%;height: 80px;background-color: #fc0;}
     #srh_02{display: none;}
-
-
-
     /*탑 메인*/
     .sub_sl_wrap{display: block; width: 100%;height: 443px;background-image: url(../img/s_main_slide.png);background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;position: relative;}
     .sub_sl_wrap p{font-size: 40px;font-weight: bold;color: #0e1843;text-align: center;padding-top: 216px;}
@@ -391,10 +389,11 @@
     .text_ip{width: 80%;height: 48px;float:left;display: block;background-color: #fff;text-indent: 16px;border-bottom: 1px solid #607e91;box-sizing: border-box;}
     .ip_last{border-bottom: none;}
     .p_txt{clear: both;width: 63.3333%;float: right;color: #4d4d4f;margin-top: 56px;font-size: 14px;}
-    #agree{clear: both;display: block;width: 15px;height: 15px;position: absolute;bottom: 21.7%;left: 36.7%;}
-    .agree_label{display: block; width: 63.3333%;float: right; text-indent: 20px;color: #4d4d4f;margin-top: 8px;font-size: 14px;}
+    .agree_wrap{overflow: hidden;float: right; width: 63.3333%;margin-top: 8px;}
+    #agree{clear: both;display: inline-block;width: 15px;height: 15px;float: left;margin-top: 4px;}
+    .agree_label{display: block;float: left; text-indent: 7px;color: #4d4d4f;font-size: 14px;}
     .but_wrap{position: absolute;bottom:96px;right: 0;}
-    .but_wrap button{width: 85px;height: 31px;display: block;float: left;font-size: 13px;cursor: pointer;}
+    .but_wrap button{width: 85px;height: 31px;line-height: 31px;display: block;float: left;font-size: 13px;cursor: pointer;}
     .fir_btn{border: 1px solid #314d5d;box-sizing: border-box;}
     .sec_btn{background-color: #314d5d; color: #fff;}
     /*콘텐츠_03*/
