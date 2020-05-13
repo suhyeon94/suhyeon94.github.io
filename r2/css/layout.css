@@ -316,10 +316,11 @@ background-size:17px;background-position:95%;padding-left: 20px;outline: none;}
 .parcel div {background-color:#26aa7d;}  
 .infomation div {background-color:#ff9b26;}
 .application a,.parcel a,.infomation a{position: absolute;bottom: 20px;right: 20px;display: block;width: 20px;height: 20px;transition: all 0.5s;transform: scale(1);}
-.application h3, .parcel h3 , .infomation h3{font-size: 14px;}   
+.application h3, .parcel h3 , .infomation h3{font-size: 13px;}   
 .application p, .parcel p, .infomation p{font-size: 12px;}     
 /* notice 공지사항*/
 .notice{clear: both;float: none;width: 100%;height: 190px;}
+.notice label{font-size: 12px;}    
 .notice > div > ul{width: 70%;overflow: hidden;}  
 .notice > div > ul li span{display: none;} /* 날짜 안보이게 */   
 /*share 콜센터*/
