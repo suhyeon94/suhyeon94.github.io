@@ -1,0 +1,7 @@
+@charset "utf-8";
+@font-face{
+    font-family: "Tommy_r";
+    src:url("../font/MADE-TOMMY-Regular_PERSONAL-USE.woff") format('woff');
+    src:url("../font/MADETOMMY.eot") format('eot');
+    src:url("../font/MADE TOMMY Regular_PERSONAL USE.otf") format('opentype');
+}

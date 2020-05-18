@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/favi_144x144.ico">
+    <!-- 모바일 웹앱 문서정보에 대한 설정 -->
+    <meta name="title" content="정수현 포트폴리오">
+    <meta name="auther" content="정수현">
+    <meta name="url" content="https://suhyeon94.github.io/portfolio">
+    <meta name="description" content="웹디자인 및 웹퍼블리셔 정수현 포트폴리오 반응형 웹 사이트">
+    <meta name="keywords" content="웹디자인 및 웹퍼블리셔 정수현 포트폴리오 반응형 웹 사이트">
+    <!-- 애플 어플 문서 정보 설정 -->
+    <meta name="apple-mobile-web-app-title" content="Jung su-hyeon portfolio,정수현 포트폴리오">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 페이스북에 노출 설정 -->
+    <meta property="fb:app_id" content="APP_ID">
+    <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="정수현 포트폴리오">
+    <meta property="og:url" content="https://suhyeon94.github.io/portfolio/index.html">
+    <meta property="og:description" content="웹디자인 및 웹퍼블리셔 정수현 포트폴리오 반응형 웹 사이트">
+    <meta property="og:img" content="https://suhyeon94.github.io/portfolio/img/thumb.jpg"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+    
+    <title>Jung su-hyeon portfolio</title>
+    <!-- 파비콘 및 메타포 아이콘 적용 -->
+    <link rel="icon" href="./ico/favi_16x16.ico" sizes="16x16">
+    <link rel="icon" href="./ico/favi_32x32.ico" sizes="32x32">
+    <link rel="icon" href="./ico/favi_48x48.ico" sizes="48x48">
+    <link rel="icon" href="./ico/favi_64x64.ico" sizes="64x64">
+    <link rel="icon" href="./ico/favi_128x128.ico" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="apple-touch-icon-precomposed" href="./ico/favi_152x152.ico">
+    <link rel="stylesheet" href="./css/font-face-m.css"><!--Tommy 영문 폰트-->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--XE icon 링크-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--구글폰트 링크-->
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/modernizr.custom.min.js"></script>
+    <script src="./js/jquery-ui-1.12.0.custom.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/examples.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/mixFilter.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script>
+        $(document).ready(function() {
+            var wd = parseInt($(window).width());
+            if(wd>=770){
+                $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(1000).animate({
+                            left: '0%'
+                        }, 1000, 'easeOutExpo');
+                    }
+                }
+            });
+           } 
+        });
+    </script>
+</head>
+<body>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">Home</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">About me</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">Portfolio</a></li>
+            <li data-menuanchor="4thpage"><a href="#4thpage" onfocus="this.blur();">Contact me</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+           <div class="tit_box">
+                <h1 class="h_tit1">Web</h1>
+                <h2 class="h_tit2">Designer</h2>
+                <h3 class="h_tit3">Jung su-hyeon.</h3>
+           </div>
+           <div class="p_wrap">
+                <p class="p_tit1">어제의 노력이 내일의 멋진 나를 만든다.</p>
+                <p class="p_tit2">안녕하세요. 웹 디자이너 <strong>정수현</strong>입니다.</p>
+           </div>
+            <div id="scroll">
+            </div>
+            <img src="./img/self.png" alt="일러스트 자화상" class="self_illur">
+            <img src="./img/line.png" alt="라인" class="line">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="이니셜 로고"></a>
+            
+            
+            <span class="bot_arrow"></span>
+            
+    
+        </div><!--section0-->
+        <div class="section" id="section1">
+            <div id="profile">
+                <div class="prof1">
+                    <h2>About <br>me</h2>
+                    <div class="profile_img"><img src="./img/profile.png" alt="프로필 사진"></div>
+                    <ul>
+                        <li><h3>Jung su-hyeon</h3></li>
+                        <li><p class="birth">1994.12.22</p></li>
+                        <li><hr class="p_line"></li>
+                        <li class="lst_01">어제의 노력이 내일의 멋진 나를 만든다!</li>
+                        <li class="lst_02">안녕하세요. 웹디자이너 <strong>정수현</strong>입니다.</li>
+                        <li class="key">Keyword</li>
+                        <li class="hash">#반응형 웹 #웹 표준 #꼼꼼함 <br>#성실함 #아이콘 드로잉</li>
+                    </ul>
+                </div>
+                <div class="prof2">
+                    <div class="list1">
+                        <p class="job">
+                            <span class="tit">Career</span>
+                            <span class="date">2017.06 - 2019.09</span>
+                            <span class="content">㈜로터렉스 광고 홍보 디자이너</span>
+                        </p>
+
+                        <p class="edu">
+                            <span class="tit">Education</span>
+                            <span class="date">2019.11 - 2020.05</span>
+                            <span class="content">그린컴퓨터아트학원 스마트기기 UI UX 디자인 과정 수료</span>
+                        </p>
+                        <p>
+                            <span class="tit empty"></span>
+                            <span class="date">2017.02 - 2017.04</span>
+                            <span class="content">하우디자인캐드학원 그래픽디자이너 과정 수료</span>
+                        </p>
+                        <p>
+                            <span class="tit empty"></span>
+                            <span class="date">2015.03 - 2017.02</span>
+                            <span class="content">원광대학교 귀금속보석공예과 졸업</span>
+                        </p>
+                        <p>
+                            <span class="tit empty"></span>
+                            <span class="date">2013.03 - 2015.02</span>
+                            <span class="content">대전과학기술대학교 주얼리디자인과 졸업</span>
+                        </p>
+                        <p class="cer">
+                            <span class="tit">Certificate</span>
+                             <span class="date"></span>
+                            <span class="content">웹디자인기능사, 컴퓨터그래픽스운용기능사, GTQ 1급, GTQ일러스트 1급</span>
+                        </p>
+                    </div>
+                    <div class="list23">
+                        <div class="list2">
+                           <span class="list2_tit">Skill</span>
+                            <div class="skill">
+                                <div id="ai">
+                                    <p>HTML/CSS</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>80%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ps">
+                                    <p>JQUERY</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>60%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ht">
+                                    <p>ILLUSTRATOR</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ja">
+                                    <p>PHOTOSHOP</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="jq">
+                                    <p>POWERPOINT</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ms">
+                                    <p>RHINO</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>60%</span></div>
+                                        </div>
+                                    </div>
+                                </div> <!--  ms   -->
+
+                            </div> <!-- skill  -->
+                        </div> <!-- list2 -->
+                        <div class="list3">
+                        </div> <!--  list23 -->
+
+                    </div> <!-- prof2  -->
+
+                </div> <!--  profile  -->
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="art">
+                    <h2>Portfolio</h2>
+                    <div class="filterWrap">
+                        <button class="filter" data-filter="all">All</button>
+                        <button class="filter" data-filter=".web">WEB</button>
+                        <button class="filter" data-filter=".responsive">RESPONSIVE</button>
+                        <button class="filter" data-filter=".mobile">MOBILE</button>
+                    </div>
+                </div>
+                <div class="container" id="mixItUp">
+                    <div class="mix mobile" id="d1" data-myorder="1">
+                        <img src="img/work_01.png" alt="모바일형" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">청우식품(제과업체)</h3>
+                            <p class="size">Mobile</p>
+                            <div class="link_wrap">
+                                <a href="https://suhyeon94.github.io/m1" target="new" class="ov_img">작품보기
+                                </a>
+                                <button class="explain ex_01">과정보기</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="mix web" id="d2" data-myorder="2">
+                        <img src="img/work_02.png" alt="PC형" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">익산보석박물관</h3>
+                            <p class="size">Web(1920X1080)</p>
+                           <div class="link_wrap">
+                            <a href="https://suhyeon94.github.io/d1" target="new" class="ov_img">작품보기
+                            </a>
+                            <button class="explain ex_02">과정보기</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d3" data-myorder="3">
+                        <img src="img/work_03.png" alt="반응형01" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">대전을지대학교 병원</h3>
+                            <p class="size">Responsive</p>
+                           <div class="link_wrap">
+                                <a href="https://suhyeon94.github.io/r1" target="new" class="ov_img">작품보기
+                                </a>
+                                <button class="explain ex_03">과정보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d4" data-myorder="4">
+                        <img src="img/work_04.png" alt="반응형02" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">근로복지공단</h3>
+                            <p class="size">Responsive</p>
+                           <div class="link_wrap">
+                                <a href="https://suhyeon94.github.io/r2" target="new" class="ov_img">작품보기
+                                </a>
+                                <button class="explain ex_04">과정보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d5" data-myorder="5">
+                        <img src="img/work_05.png" alt="반응형03" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">티머니 카드&amp;페이</h3>
+                            <p class="size">Responsive</p>
+                            <div class="link_wrap">
+                                <a href="https://suhyeon94.github.io/r3" target="new" class="ov_img">작품보기
+                                </a>
+                                <button class="explain ex_05">과정보기</button>
+                            </div>
+                        </div>
+                    </div>
+  
+                </div>
+            </div>
+        </div>
+         <div class="section" id="section3">
+              <div class="contact_box">
+                 <H1>Contact me</H1>
+                  <ul class="contact">
+                      <li>
+                        <a href="tel:010-5767-3326" class="call">
+                         <img src="./img/phone.png" alt="핸드폰"> 
+                          010-5767-3326
+                        </a>
+                      </li>
+                      <li>
+                        <a href="sms:010-5767-3326">
+                           <img src="./img/sms.png" alt="문자">
+                           send message
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:derh535@naver.com">
+                           <img src="./img/email.png" alt="이메일">
+                           derh535@naver.com
+                        </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="p_box">
+                   <img src="./img/logo.png" alt="로고" class="logo_img">
+                    <p class="p_tit1">
+                        현재의 실력에 안주하지 않고<br>
+                        꾸준히 성장해나가는 모습 보여드리겠습니다.<br> 
+                        감사합니다. <strong>정수현</strong>이었습니다. 
+                    </p>
+ 
+                  </div>
+               <div id="footer">
+                    <p>COPYRIGHT &copy; 2020 JUNG SU-HYEON ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+         </div>
+         <div class="bl_wrap pop_01">
+           <div class="pop_wrap">
+            <div class="tit_box">
+             <h3 class="pop_tit">Mobile web</h3>
+             <button class="close_btn cl_01"><i class="xi-close"></i></button>
+            </div>
+            <div class="pop_con">
+              <h3 class="tit">청우식품 사이트 리뉴얼(모바일 웹)</h3>
+              <h4>Design concept</h4>
+              <p>평소 청우식품의 과자를 간식으로 즐겨먹었는데 좋은 제품력에 비해 낮은 기업 인지도가 아쉬워 리뉴얼 사이트로 선정하였습니다. 청우 식품의 주 타깃인 20 ~ 30대 여성층과 주력 제품군인 고급 디저트의 이미지를 고려하여 아기자기한 아이콘을 직접 제작하고 상큼하면서 식욕을 돋우는 오렌지색을 주조색으로 디자인했습니다.
+            </p>
+             <h4>Program</h4>
+              <p>Photoshop/Illustrator/HTML/CSS/JQuery</p>
+             <a href="https://suhyeon94.github.io/m1" class="main_btn" target="new">View website</a>
+             <a href="https://suhyeon94.github.io/m1/sub1.html" class="sub1_btn" target="new">View sub1</a>
+             <a href="https://suhyeon94.github.io/m1/sub2.html" class="sub2_btn" target="new">View sub2</a>
+             <!--<a href="https://cwfood.co.kr/"><button class="Ex_btn">기존 사이트</button></a>  -->
+            </div>
+            <div class="pop_img">
+                <img src="./img/pop_01.png" alt="팝업이미지01">
+            </div>
+            </div>
+         </div>
+         <div class="bl_wrap pop_02">
+             <div class="pop_wrap">
+                <div class="tit_box">
+                 <h3 class="pop_tit">PC web</h3>
+                 <button class="close_btn cl_02"><i class="xi-close"></i></button>
+                </div>
+                <div class="pop_con">
+                      <h3 class="tit">익산보석박물관 사이트 리뉴얼(PC 웹)</h3>
+                      <h4>Design concept</h4>
+                      <p>금속공예를 전공해서 평소 보석에 관심이 많았고 관련 사이트를 멋진 작품으로 만들고 싶었습니다. 재학시절 알게 된 익산보석박물관 사이트를 들어가 보니 오랜기간 업데이트가 되지 않아 방치된 느낌이 들었고 통일성이 없어 아쉬움을 느꼈습니다. 
+                      주조색을 블랙과 은은한 골드로 선택하여 고급스러우면서 부드러운 분위기를 주었고 풀페이지 구성으로 큼직한 콘텐츠 배치와 단순하지만 깔끔한 레이아웃으로 보는 이의 흥미를 자극하고 가독성을 높이는데 중점을 두었습니다.
+                     </p>
+                     <h4>Program</h4>
+                      <p>Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                     <a href="https://suhyeon94.github.io/d1" class="main_btn" target="new">View website</a>
+                </div>
+                
+                <div class="pop_img">
+                    <img src="./img/pop_02.png" alt="팝업이미지02">
+                </div>
+         </div>
+         </div>
+         <div class="bl_wrap pop_03">
+             <div class="pop_wrap">
+                <div class="tit_box">
+                 <h3 class="pop_tit">Responsive web</h3>
+                 <button class="close_btn cl_03"><i class="xi-close"></i></button>
+                </div>
+                <div class="pop_con">
+                  <h3 class="tit">대전을지대학교 병원 사이트 리뉴얼<br>(반응형 웹)</h3>
+                   <h4>Design concept</h4>
+                      <p>나이가 많으신 환분들도 헤매지 않고 쉽게 이용 가능한 병원 사이트 제작을 목표로 기획하였습니다. 콘텐츠 간의 구별이 쉽도록 선명한 색상의 컬러와 단순한 아이콘으로 구성하였고 눈이 편안하면서 신뢰감을 주는 짙은 남색 계열을 주조색으로 디자인하였습니다.
+                     </p>
+                     <h4>Program</h4>
+                      <p>Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                     <a href="https://suhyeon94.github.io/r1" class="main_btn" target="new">View website</a>
+                     <a href="https://suhyeon94.github.io/r1/sub.html" class="sub1_btn" target="new">View sub</a>
+                </div>
+                <div class="pop_img">
+                    <img src="./img/pop_03.png" alt="팝업이미지03">
+                </div>
+        </div>
+         </div>
+         <div class="bl_wrap pop_04">
+             <div class="pop_wrap">
+                <div class="tit_box">
+                 <h3 class="pop_tit">Responsive web</h3>
+                 <button class="close_btn cl_04"><i class="xi-close"></i></button>
+                </div>
+                <div class="pop_con">
+                  <h3 class="tit">근로복지공단 사이트 리뉴얼(반응형 웹)</h3>
+                    <p></p>
+                     <h4>Design concept</h4>
+                      <p>
+                      근로복지공단의 주된 접속자인 근로자를 고려하여 희망차고 긍정적인 분위기의 슬라이드 사진과 고채도의 선명한 색상을 사용하였습니다. 레이아웃은 공단 홈페이지의 특성인 많은 정보를 보기 쉽고 깔끔하게 정돈하는는 것에 중점을 두었습니다.
+                     </p>
+                     <h4>Program</h4>
+                      <p>Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                     <a href="https://suhyeon94.github.io/r2" class="main_btn" target="new">View website</a>
+                </div>
+                <div class="pop_img">
+                    <img src="./img/pop_04.png" alt="팝업이미지04">
+                </div>
+             </div>
+         </div>
+         <div class="bl_wrap pop_05">
+             <div class="pop_wrap">
+                <div class="tit_box">
+                 <h3 class="pop_tit">Responsive web</h3>
+                 <button class="close_btn cl_05"><i class="xi-close"></i></button>
+                </div>
+                <div class="pop_con">
+                  <h3 class="tit">티머니 카드&amp;페이 사이트 리뉴얼(반응형 웹)</h3>
+                  <p></p>
+                     <h4>Design concept</h4>
+                      <p>
+                      기존의 사이트는 콘텐츠 배치가 깔끔하고 흰색과 옅은 회색을 주로 사용하여 무난한 느낌을 주었지만 스마트 페이 기술에의 장점인 편리함과 티머니카드&amp;페이의 개성 표현이 다소 부족해보였습니다. 기존 티머니 로고에서 가져온 강한 대비의 보라색과 주황색을 이용하여 그래픽 요소에 생동감과 주목성을 주고 기하학적인 패턴과 라인아트 일러스트를 제작하여 티머니 카드&amp;페이 서비스의 스마트함과 편리성을 표현하였습니다.
+                     </p>
+                     <h4>Program</h4>
+                     <p>Photoshop/Illustrator/HTML/CSS/JQuery</p>
+                     <a href="https://suhyeon94.github.io/r3" class="main_btn" target="new">View website</a>
+                </div>
+                <div class="pop_img">
+                    <img src="./img/pop_05.png" alt="팝업이미지05">
+                    <img src="./img/pop_052.png" alt="팝업이미지052">
+                </div>
+             </div>
+         </div>
+        
+</body>
+
+</html>
