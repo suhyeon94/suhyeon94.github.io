@@ -51,7 +51,7 @@ button {outline: none;}
 #section0 .h_tit3{position: absolute;right:14px;top: 200px;font-size: 23px;z-index: 110;color: #333132;animation-name:txtAni;animation-duration:3s;animation-iteration-count: infinite;}
 #section0 .p_wrap{position: absolute;top: 93px;left: 160px;line-height: 1.4;}
 
-#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:120px;right: calc(50% - 22px);background-image: url(../img/arrow3.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
+#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:120px;right: calc(50% - 22px);background-image: url(../img/arrow.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
 #section1{ width: 100%;height: 100%;background-image: url(../img/bg_02.png);background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;}
 #profile{position: relative;width: 1400px;height: 900px;margin: 0 auto;overflow: hidden;padding: 110px 40px;box-sizing: border-box;/*border-bottom: 1px solid #000;*/}
 .prof1{float: right;width: 460px;height: 800px;box-sizing: border-box;/*padding-left: 70px;*/}
@@ -107,17 +107,6 @@ height: 100%;color: #fff;position: absolute;top: 0;left: -200px;}
 .hobby ul li{float: left;width: 68px;font-size: 16px;font-weight: bold;text-align: center;padding: 0 10px;}
 .hobby img{width: 40px;height: 40px;margin: 5px auto;display: block;}
 
-.pers{width: 500px;height: 150px;}
-.title2{font-size: 20px;text-align: center;padding-bottom: 30px;}
-.pers > div{clear: both;width: 280px;overflow: hidden;padding-bottom: 15px;margin: 0 auto;}
-.left{width: 50px;font-weight: 600;float: left;text-align: center;}
-.right{width: 50px;font-weight: 600;float: right;text-align: center;}
-.pers .bar2{float: left;width: 180px;height: 10px;padding-top: 2px;}
-.pers .fullbar2{width: 100%;height: 10px;/*background: #D1D1D1;*/ position: relative;overflow: hidden;}
-.pers .occupy2{background: #000;height: 100%;position: absolute;top: 0;}
-#per1 .occupy2{width: 60%;}
-#per2 .occupy2{width: 70%;}
-#per3 .occupy2{width: 65%;}
 
 #section2{width: 100%;height: 1500px;background-image: url(../img/bg_04.png);background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;}
 #section2 .intro {
@@ -198,7 +187,7 @@ height: 100%;color: #fff;position: absolute;top: 0;left: -200px;}
 #section0 .h_tit2{position: absolute;font-size: 36px;font-weight: 900;z-index: 110;right: 30px;top: 150px;color: #595757;animation-name:txtAni;animation-duration:3s;animation-iteration-count: infinite;}
 #section0 .h_tit3{position: absolute;right:14px;top: 200px;font-size: 23px;z-index: 110;color: #333132;animation-name:txtAni;animation-duration:3s;animation-iteration-count: infinite;}
 #section0 .p_wrap{position: absolute;top: 93px;left: 160px;line-height: 1.4;}
-#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:120px;right: calc(50% - 22px);background-image: url(../img/arrow3.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:t_arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
+#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:120px;right: calc(50% - 22px);background-image: url(../img/arrow.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:t_arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
 #section1{width: 100%;height:auto;background-image: url(../img/tablet_bg_02.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: center center;}
 #profile{width: 90%;height: 100%;padding: 0;box-sizing: border-box;margin: 0 auto;}
 .prof1{;width: 100%;height:auto;box-sizing: border-box;padding-left: 10px;padding-top: 80px;}
@@ -248,17 +237,7 @@ height: 100%;color: #fff;position: absolute;top: 0;left: -200px;}
 .hobby ul{width: 440px;overflow: hidden;margin: 0 auto;}
 .hobby ul li{float: left;width: 68px;font-size: 16px;font-weight: bold;text-align: center;padding: 0 10px;}
 .hobby img{width: 40px;height: 40px;margin: 5px auto;display: block;}
-.pers{width: 500px;height: 150px;}
-.title2{font-size: 20px;text-align: center;padding-bottom: 30px;}
-.pers > div{clear: both;width: 280px;overflow: hidden;padding-bottom: 15px;margin: 0 auto;}
-.left{width: 50px;font-weight: 600;float: left;text-align: center;}
-.right{width: 50px;font-weight: 600;float: right;text-align: center;}
-.pers .bar2{float: left;width: 180px;height: 10px;padding-top: 2px;}
-.pers .fullbar2{width: 100%;height: 10px;/*background: #D1D1D1;*/ position: relative;overflow: hidden;}
-.pers .occupy2{background: #000;height: 100%;position: absolute;top: 0;}
-#per1 .occupy2{width: 60%;}
-#per2 .occupy2{width: 70%;}
-#per3 .occupy2{width: 65%;}
+
 #section2{width: 100%;height:auto;background-size: 100% 100%;background-repeat: no-repeat;background-position: center center}
 .container{overflow:hidden;width:98%;margin:0 auto;box-sizing:border-box;backface-visibility: hidden;min-height: 820px;}
 .container:after{content: "";display: inline-block;width: 100%;}
@@ -316,7 +295,7 @@ height: 100%;color: #fff;position: absolute;top: 0;left: -200px;}
 #section0 .h_tit2{position: absolute;font-size: 23px;font-weight: 900;z-index: 110;right: 13px;top: 168px;color: #595757;animation-name:txtAni;animation-duration:3s;animation-iteration-count: infinite;}
 #section0 .h_tit3{position: absolute;right:13px;top: 200px;font-size: 13px;z-index: 110;color: #333132;animation-name:txtAni;animation-duration:3s;animation-iteration-count: infinite;}
 #section0 .p_wrap{position: absolute;top: 30px;left: 100px;line-height: 1.4;font-size: 10px;margin-top: 30px;}
-#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:50px;right: calc(50% - 22px);background-image: url(../img/arrow3.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:m_arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
+#section0 .bot_arrow{width: 44px;height: 44px;position: absolute;bottom:50px;right: calc(50% - 22px);background-image: url(../img/arrow.png);background-repeat:no-repeat;background-position: center center;background-size: contain;animation-name:m_arrow_ani;animation-duration: 1.2s;animation-iteration-count: infinite; }
 #section1{width: 100%;height: auto; background-image: url(../img/m_bg_02.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: center center;}
 #profile{width: 86%;height: auto;padding: 0;box-sizing: border-box;margin: 0 auto;}
 .prof1{;width: 100%;height: auto;box-sizing: border-box;padding-left: 0px;padding-top:0px;}
@@ -380,12 +359,7 @@ height: 100%;color: #fff;position: absolute;top: 0;left: -200px;}
 .pers > div{clear: both;width: 280px;overflow: hidden;padding-bottom: 15px;margin: 0 auto;}
 .left{width: 50px;font-weight: 600;float: left;text-align: center;}
 .right{width: 50px;font-weight: 600;float: right;text-align: center;}
-.pers .bar2{float: left;width: 180px;height: 10px;padding-top: 2px;}
-.pers .fullbar2{width: 100%;height: 10px;/*background: #D1D1D1;*/ position: relative;overflow: hidden;}
-.pers .occupy2{background: #000;height: 100%;position: absolute;top: 0;}
-#per1 .occupy2{width: 60%;}
-#per2 .occupy2{width: 70%;}
-#per3 .occupy2{width: 65%;}
+
 #section2{width: 100%;height:auto;background-size: 100% 100%;background-repeat: no-repeat;background-position: center center}   
 .art{width:86%;height: auto;margin: 0 auto;padding-top: 40px;box-sizing: border-box;padding-bottom: 20px;}
 .art h2{font-size: 30px;padding-bottom: 20px;color: #595757;font-family: 'Tommy_r';margin-left: 10px;}
