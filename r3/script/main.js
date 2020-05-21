@@ -26,7 +26,7 @@
             });
             $(".m_close").click(function() { //닫기 버튼 클릭하면
                 $(".mleft").removeClass("on"); //.lst_box에 on이라는 클래스를 삭제해라. left:-110%
-            });/*오른쪽 사이드 메뉴*/
+            });//오른쪽 사이드 메뉴
      
   });
 

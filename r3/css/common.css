@@ -2,6 +2,7 @@
 
 *{margin: 0;padding: 0;}
 body,html{width: 100%;height: 100%;font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕', '돋움',' Dotum','sans-serif','arial';/*overflow-x:hidden;*/}
+body{overflow-y: hidden;}
 ul,li{list-style: none;}
 a{text-decoration: none;}
 input,label,img,button{outline: 0;border: 0;}
